@@ -95,12 +95,19 @@
             </div>
 
             <div class="quize__pagination">
-              <div class="pagin__button pagin__button--1 active">1</div>
-              <div class="pagin__button pagin__button--2 normal">2</div>
-              <div class="pagin__button pagin__button--3 normal">3</div>
-              <div class="pagin__button pagin__button--4 normal">4</div>
-              <div class="pagin__button pagin__button--5 normal">5</div>
-              <div class="pagin__button pagin__button--6 normal">6</div>
+              <div class="pagin__button pagin__button--1">1</div>
+
+              <div class="pagin__button pagin__button--2">2</div>
+
+              <div class="pagin__button pagin__button--3">3</div>
+
+              <div class="pagin__button pagin__button--4">4</div>
+
+              <div class="pagin__button pagin__button--5">5</div>
+
+              <div class="pagin__button pagin__button--6">6</div>
+
+              <div class="pagin__button pagin__button--7">7</div>
             </div>
 
             <div id="quize__question" class="quize__question">
@@ -115,10 +122,45 @@
 
           <div class="quize__second--part">
             <img
+              id="quize__image"
               class="quize__image"
               src="./images/quizz/1.png"
               alt="doctor's image"
             />
+          </div>
+        </div>
+
+        <div class="quize__modal">
+          <p class="modal__header">Congratulations!</p>
+
+          <p class="modal__first__descr">You've won new program bears</p>
+
+          <div class="modal__product product second__prod">
+            <img
+              class="product__image-2"
+              src="./images/products/gummys.png"
+              alt="gummys"
+            />
+
+            <div class="price price-2">$0.77/Gummy</div>
+          </div>
+
+          <div class="modal__second__descr">
+            <p class="second__descr second__descr--1">1. Click on "OK" and then continue with the delivery page</p>
+
+            <p class="second__descr second__descr--2"> 
+              2. Fill in the form to receive one free botle you have 
+              <span>do timer</span>
+              minutes to do it
+            </p>
+          </div>
+
+          <div class="modal__footer">
+            <label class="email--label" for="email">
+              <input class="email--input" id="email" type="email" placeholder="Enter Mail">
+            </label>
+
+            <button class="modal__button">Send</button>
           </div>
         </div>
       </div>

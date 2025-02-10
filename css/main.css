@@ -164,6 +164,8 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 104px;
+
+  position: relative;
 }
 
 .quize__main {
@@ -215,6 +217,7 @@ a {
   height: 21px;
   line-height: 21px;
   text-align: center;
+  cursor: pointer;
 }
 
 .normal {
@@ -241,6 +244,7 @@ a {
   font-weight: 900;
   font-size: 36px;
 
+  cursor: pointer;
 }
 
 .yes {
@@ -254,6 +258,112 @@ a {
   color: #B4B4B4;
   border: 1px solid black;
 
+}
+
+.quize__modal {
+  /* display: none; */
+  background-color: #fff;
+  width: 592px;
+  height: 717px;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+
+  /* padding-block: 64px 57px; */
+  padding-top: 64px;
+
+  position: absolute;
+}
+
+.modal__header {
+  font-family: "Inter", serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 5;
+  color: #572F83;
+
+  margin-bottom: 34px;
+}
+
+.modal__first__descr {
+  font-family: "Inter", serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 30px;
+}
+
+.modal__product {
+  margin-bottom: 25px;
+}
+
+.modal__second__descr {
+  padding-inline: 65px 76px;
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.second__descr--1 {
+  margin-bottom: 24px;
+}
+
+.second__descr {
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #572F83;
+
+}
+
+.modal__footer {
+  display: flex;
+  gap: 15px;
+
+  margin-inline: 74px 62px;
+}
+
+.email--input {
+  width: 312px;
+  height: 59px;
+  border-radius: 10px;
+
+  box-shadow: 0px 11px 44px #ddd ;
+  border: none;
+
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+
+  padding-left: 16px;
+}
+
+.email--input::placeholder {
+  color: #C2C2C2;
+}
+
+.modal__button {
+  height: 59px;
+  width: 129px;
+
+  background-color: #30F000;
+  color: #fff;
+
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1 4 #fff;
+
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+
+  cursor: pointer;
 }
 
 /* #end region quize */
