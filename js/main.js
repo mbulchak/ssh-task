@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let paginationNumber = document.getElementsByClassName("pagin__button");
   let quizeButton = document.getElementsByClassName("quize__button");
-  // console.log('quizeButton', quizeButton);
-
-  // let quizeQuestion = document.querySelector(".quize__question");
+  let showModal = document.getElementsByClassName("quize__modal");
+  let closeModalByButton = document.getElementsByClassName("modal__button");
+  let timer = document.getElementById("timer");
 
   quizebutton1.addEventListener("click", () => {
     document.getElementById("quize__question").textContent =
@@ -62,32 +62,40 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("quize__image").src = "../images/quizz/7.png";
   });
 
-  let activePagination;
-
   if (paginationNumber.length > 0) {
-    paginationNumber[0].classList.add('active');
+    paginationNumber[0].classList.add("active");
   }
 
   for (let i = 0; i < paginationNumber.length; i++) {
-    paginationNumber[i].addEventListener("click", function() {
-
+    paginationNumber[i].addEventListener("click", function () {
       for (let k = 0; k < paginationNumber.length; k++) {
-        paginationNumber[k].classList.remove('active');
+        paginationNumber[k].classList.remove("active");
       }
 
-      activePagination = this.classList.add('active');
+      activePagination = this.classList.add("active");
 
-      this.classList.add('active');
+      this.classList.add("active");
     });
   }
 
-  function changewhileclickingButtons () {
-    for (let i = 0; i< quizeButton.length; i++) {
-      paginationNumber[i].addEventListener("click", () => {
-        
-      })
-    }
+  console.log("closeModalByButton", closeModalByButton);
+  closeModalByButton[0].addEventListener("click", () => {
+    showModal[0].style.display = "none";
+  });
+
+  for (let i = 0; i < quizeButton.length; i++) {
+    quizeButton[i].addEventListener("click", () => {
+      showModal[0].style.display = "flex";
+    });
   }
 
-  changewhileclickingButtons();
+  // timer
+
+  let setTimer = 600;
+
+  window.setInterval(function () {
+    if (setTimer > 0) setTimer--;
+    timer.innerHTML = '0' + setTimer;
+    if (setTimer <= 0) setTimer = 600;
+  }, 1000);
 });
