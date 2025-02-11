@@ -1,0 +1,21 @@
+.descr__program--2 {
+  width: 603px;
+  height: 50px;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: 'Inter', serif;
+
+  margin: 0 auto;
+
+  margin-bottom: 67px;
+}
+
+@media (max-width: 650px ) {
+  .descr__program--2 {
+    width: 331px;
+    height: 100px;
+  }
+}

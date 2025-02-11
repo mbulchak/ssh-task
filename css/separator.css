@@ -1,0 +1,15 @@
+.separator {
+  margin: 0 auto;
+  background-color: #D2232E;
+  height: 3px;
+  width: 974px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 650px ) {
+  .separator {
+    height: 1px;
+    width: 340px;
+    margin-bottom: 35px;
+  }
+}
